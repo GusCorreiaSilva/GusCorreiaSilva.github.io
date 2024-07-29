@@ -1,6 +1,7 @@
 body {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 0.313rem 0.625rem;
     font-family: monospace;
     justify-items: center;
     --bg: var(--white);
@@ -10,23 +11,21 @@ body {
     transition: var(--trans);
 } 
 header{
-    margin-left: auto;
-    padding: 130px 50px 10px 50px;
+    padding: 3.125rem;
 }
 .texto{
-    margin-left: auto;
+    
     font-family: monospace;
     font-size: 1.5rem;
-    padding-bottom: 50px;
+    padding-bottom: 3.125rem;
 }
 main {
-    margin-left: auto;
     grid-column: 1;
-    padding: 50px;
+    padding: 3.125rem;
 }
 .btn-div {
     justify-self: left;
-    padding-left: 50px;
+    padding: 3.125rem;
     grid-column: 2;
 }
 ul {
@@ -44,10 +43,10 @@ li {
     background: var(--btnBg);
 }
 .btn {
-    height: 50px;
-    width: 150px;
+    height: 3.125rem;
+    width:9.37rem;
     font-size: 1.2rem;
-    border-radius: 5px;
+    border-radius: 0.313rem;
     border: 2px solid;
     color: var(--btnFontColor);
     background-color: var(--btnBg);
@@ -87,18 +86,35 @@ body {
         font-size: 1.3rem;
     }
     header{
-        padding: 130px 30px 10px 30px;
+        padding: 1.875rem 0.625rem 0.625rem 0.625rem;
     }
 }
 @media (max-width:760px) {
     main {
-        padding: 20px;
+        padding: 1.25rem;
     }
     .texto {
-        padding-bottom: 20px;
+        padding-bottom: 1.25rem;
         line-height: 1.3;
     }
+    body {
+        gap: 0px 0.625rem;
+    }
+    .btn-div {
+        padding: 3.125 1.875rem 1.875rem 1.875rem;
+    }
+}
+@media (max-width:550px) {
     header {
-        padding: 130px 20px 5px 20px;
+        font-size: 0.9rem;
+    }
+    main ul {
+        font-size: 1rem;
+    }
+    body {
+        gap: 0px 0px;
+    }
+    .btn-div {
+        padding:  3.125 1.875rem 1.875rem 0.625rem;
     }
 }
